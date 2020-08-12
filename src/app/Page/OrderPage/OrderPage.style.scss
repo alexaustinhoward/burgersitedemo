@@ -1,0 +1,135 @@
+  
+  .orderpage{
+      position: fixed;
+      overflow-y: scroll;
+      width: 100vw;
+      height: 100vh;
+    background-image: url("../../../assets/images/backgroundwood.png");
+    .OPcontainer{
+        position: relative;
+        width: 100vw;
+      height: 100vh;
+    .images{
+        position: absolute;
+        background-color: rgba(22, 22, 21, 0.37);
+        width:70vw;
+        height: 45vh;
+        left: 30em;
+        .imagecontainer{
+            position: relative;
+            .bun{
+                position: absolute;
+                top:2.5vh;
+                z-index: 10;
+            }
+            .other{
+                position: absolute;
+                top:4.3vh;
+                z-index: 7;
+            }
+            .meat{
+                position: absolute;
+                top:4.5vh;
+                z-index: 5;
+            }
+            .bunb{
+                position: absolute;
+               top:1.5vh;
+                z-index: 4;
+            }
+            .other2{
+                position: absolute;
+                top:13vh;
+                z-index: 3;
+            }
+            .meat2{
+                position: absolute;
+                top:14vh;
+                z-index: 2;
+            }
+            .bunb2{
+                position: absolute;
+               top:9vh;
+                z-index: 1;
+            }
+
+         img{
+            width:32vw;
+            }
+     }
+    }
+      .choicessection{  
+        position: absolute;
+      width:70vw;
+      height:42vh;
+      font-family: garmond;
+      font-size: 1.2vh;
+      background-color: rgba(22, 22, 21, 0.37);
+      border-radius: 15px;
+      color: white;
+      left: 40em;
+      bottom: 6em;
+      z-index: 3;
+    .mcontainer{
+    display: flex;
+    
+    .arrow{
+    width: 2em;
+    filter: invert(19%) sepia(57%) saturate(2973%) hue-rotate(344deg) brightness(98%) contrast(86%);    }
+    }
+}
+}
+MealBuySection{
+    position: absolute;
+    bottom: 6em;
+    left:10em;
+    z-index: 1;
+}
+cart-view{
+    position: absolute;
+    top: 5em;
+   right:4em;
+    z-index: 0;
+}
+  }
+  @media only screen and (max-width : 768px){
+    .choicessection{  
+       
+      width:90vw !important;
+      height:50vh !important;
+      
+      left: 0em !important;
+ 
+  }
+  MealBuySection{
+    top: 95vh !important;
+    left:5vh !important;
+    
+}
+.images{
+    left: 0em !important;
+    .other2{
+        
+        top:8vh!important;
+      
+    }
+    .meat2{
+       
+        top:9vh!important;
+      
+    }
+    .bunb2{
+      
+       top:6vh!important;
+    }
+    img{
+        width:60vw!important;
+        }
+}
+cart-view{
+   top: 70vw !important;
+   left:0em !important;
+    
+}
+}
+  

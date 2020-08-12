@@ -1,0 +1,18 @@
+<div class="mealitem">
+    <div class="mealitem__info mealitem__info--nodetail ">
+       <div class="foodimage"  
+       [ngStyle]="{ 'background-image': 'linear-gradient(to right bottom,#DEF7F7, #A7D4DE), url(' + background + ')'}">
+       </div>
+       <h1 class="titlesection part1"> {{titlespan1}}</h1>
+       <h1 class="titlesection part2"> {{titlespan2}}</h1>
+      
+      <button class="cartbutton" type="button" (click)="AddItem(Name)" [ngStyle]="{ 'display': (orderstate ? 'block' : 'none') }"> add to cart</button>
+    </div>
+    <div class="mealitem__info mealitem__info--detail ">
+        <h1>Calories: {{calories}}</h1>
+        <h2>Total Fat: {{fat}}</h2>
+        <h2>Cholestrol: {{Cholestrol}}</h2>
+        <h2>Sodium: {{Sodium}}</h2>
+        <h2>Protein: {{Protein}}</h2>
+    </div>
+</div>

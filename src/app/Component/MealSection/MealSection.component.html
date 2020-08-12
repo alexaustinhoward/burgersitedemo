@@ -1,0 +1,19 @@
+<div class="mealsection"  >
+    
+         
+    
+    <MealItem  
+    *ngFor="let item of Items"
+    [background]=item.image
+    [titlespan1]=item.Name
+    [titlespan2]=item.Namespan2
+    [calories]=item.Caloires
+    [fat]=item.Fat
+    [Cholestrol]=item.Cholestrol
+    [Sodium]=item.Sodium
+    [Protein]=item.Protein
+    [orderstate]="false"
+    >
+    </MealItem>   
+  
+</div>

@@ -1,0 +1,8 @@
+
+
+<li class="cartitems" *ngFor="let cartitem of cartitemslist">
+
+    <h1>{{cartitem.fullname}} X {{cartitem.quantity}} </h1>
+    <img class="arrow"src="../../../assets/images/minus.svg"   (click)="LowerItem(cartitem.fullname)" alt=""/>
+    <img class="arrow"src="../../../assets/images/cross.svg"   (click)="RemoveItem(cartitem.fullname)" alt=""/>
+</li>

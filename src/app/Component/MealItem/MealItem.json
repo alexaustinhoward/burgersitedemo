@@ -1,0 +1,89 @@
+{"mealItems":[
+    
+        {
+        "fullname":"Strawberry Tart",
+        "Name":"Strawberry",
+        "Namespan2":"Tart",
+        "image":"../../../assets/images/side1.jpg",
+        "Caloires":"90",
+        "Fat":"0g",
+        "Cholestrol":"0mg",
+        "Sodium":"0mg",
+        "Protein":"2g",
+        "price":2.99
+
+        },
+    
+        {
+        "fullname":"Blueberry Frenchtoast",
+        "Name":"Blueberry ",
+        "Namespan2":"Frenchtoast",
+        "image":"../../../assets/images/side2.jpg",
+        "Caloires":"180",
+        "Fat":"12g",
+        "Cholestrol":"140mg",
+        "Sodium":"10mg",
+        "Protein":"12g",
+        "price":8.99
+
+        },
+     
+        {
+        "fullname":"Pumpkin Soup",
+        "Name":"Pumpkin ",
+        "Namespan2":"Soup",
+        "image":"../../../assets/images/side3.jpg",
+        "Caloires":"110",
+        "Fat":"7g",
+        "Cholestrol":"20mg",
+        "Sodium":"5mg",
+        "Protein":"3g",
+        "price":5.99
+       
+
+        },
+    
+        {
+         "fullname":"Raspberry Popicle",
+        "Name":"Raspberry",
+        "Namespan2":"Popicle",
+        "image":"../../../assets/images/side4.jpg",
+        "Caloires":"90",
+        "Fat":"0g",
+        "Cholestrol":"0mg",
+        "Sodium":"0mg",
+        "Protein":"0g",
+        "price":1.99
+
+        },
+        
+        {
+        "fullname":"French Fries",
+        "Name":"French",
+        "Namespan2":"Fries",
+        "image":"../../../assets/images/side5.jpg",
+        "Caloires":"240",
+        "Fat":"20g",
+        "Cholestrol":"200mg",
+        "Sodium":"40mg",
+        "Protein":"0g",
+        "price":0.99
+       
+
+        },
+     
+        {
+        "fullname":"Orange Tart",
+        "Name":"Orange",
+        "Namespan2":"Tart",
+        "image":"../../../assets/images/side6.jpg",
+        "Caloires":"70",
+        "Fat":"0g",
+        "Cholestrol":"0mg",
+        "Sodium":"0mg",
+        "Protein":"0g",
+        "price":2.99
+
+        }
+    ]
+}

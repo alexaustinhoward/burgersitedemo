@@ -1,0 +1,14 @@
+.mealbuysection{
+    width:24em;
+    height: 50em;
+    
+        display:grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 17em 17em 17em 17em 17em;
+        overflow: scroll;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        ::-webkit-scrollbar {
+            display: none;
+          }
+}

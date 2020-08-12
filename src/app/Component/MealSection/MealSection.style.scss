@@ -1,0 +1,16 @@
+.mealsection{
+    width:75em;
+    height: auto;
+    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 17em 17em;
+     
+}
+@media only screen and (max-width : 768px){
+    .mealsection{
+        width:80vw !important;
+        grid-template-columns: 1fr  !important;
+        grid-template-rows:  17em 17em 17em 17em 17em  !important;
+}
+}

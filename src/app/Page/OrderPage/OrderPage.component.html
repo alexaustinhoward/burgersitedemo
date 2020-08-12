@@ -1,0 +1,61 @@
+<div class="orderpage">
+    <div class="OPcontainer">
+    <NavigationBar></NavigationBar>
+    <div class="images">
+        <div class="imagecontainer">
+         <img class="bun" src={{imagechoices[0]}} alt="">
+         <img class="other" src={{imagechoices[1]}} alt="">
+         <img class="meat"src={{imagechoices[2]}} alt="">
+        <img class="bunb" src={{imagechoices[3]}} alt="">
+        <div class="doublesec" [ngStyle]="{ 'display': (typeofburger ? 'none' : 'block') }" >
+            <img class="other2" src={{imagechoices[1]}} alt="">
+            <img class="meat2"src={{imagechoices[4]}} alt="">
+            <img class="bunb2" src={{imagechoices[5]}} alt="">
+
+        </div>
+        </div>
+    </div>
+    <div class="choicessection">
+        <div class="burgerchoice mcontainer">
+            <h1 [ngStyle]="{ 'color': (typeofburger ? 'white' : 'red') }" (click)="SetType(true)">Single</h1>
+             <h1>/</h1>
+            <h1 [ngStyle]="{ 'color': (typeofburger ? 'red' : 'white') }" (click)="SetType(false)">Double</h1>
+        </div>
+        <div class="buntop mcontainer">
+            <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(0,buntopimages,0,buntextoptions,buntopimages)" alt=""/>
+            <h1>Top Bun: {{choiceoptions[0]}} </h1>
+            <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(0,buntopimages,0,buntextoptions,buntopimages)" alt=""/>
+         </div>
+        <div class="buntop mcontainer">
+             <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(1,lcimageoptions,1,lctextptions,lcimageoptions)" alt=""/>
+             <h1>Topping: {{choiceoptions[1]}} </h1>
+             <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(1,lcimageoptions,1,lctextptions,lcimageoptions)" alt=""/>
+        </div>
+        <div class="buntop mcontainer">
+            <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(2,pattiesimagesoptions,2,pattiestextoptions,pattiesimagesoptions)" alt=""/>
+             <h1>Pattie: {{choiceoptions[2]}} </h1>
+             <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(2,pattiesimagesoptions,2,pattiestextoptions,pattiesimagesoptions)" alt=""/>
+        </div>
+        <div class="buntop mcontainer">
+            <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(3,bunbottomimages,3,buntextoptions,bunbottomimages)" alt=""/>
+             <h1> Bun: {{choiceoptions[3]}} </h1>
+             <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(3,bunbottomimages,3,buntextoptions,bunbottomimages)" alt=""/>
+        </div>
+        <div [ngStyle]="{ 'display': (typeofburger ? 'none' : 'block') }"  >
+            <div class="buntop mcontainer">
+                <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(4,pattiesimagesoptions,4,pattiestextoptions,pattiesimagesoptions)" alt=""/>
+                 <h1>Pattie: {{choiceoptions[4]}} </h1>
+                 <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(4,pattiesimagesoptions,4,pattiestextoptions,pattiesimagesoptions)" alt=""/>
+            </div>
+            <div class="buntop mcontainer">
+                <img class="arrow"src="../../../assets/images/return.svg"   (click)="nextoptions(5,bunbottomimages,5,buntextoptions,bunbottomimages)" alt=""/>
+                 <h1>Bottom Bun: {{choiceoptions[5]}} </h1>
+                 <img class="arrow"src="../../../assets/images/arrow.svg"   (click)="prevoptions(5,bunbottomimages,5,buntextoptions,bunbottomimages)" alt=""/>
+            </div>
+        </div>
+        <cart-view></cart-view>
+    </div>
+  
+    <MealBuySection row='false'></MealBuySection>
+</div>
+</div>

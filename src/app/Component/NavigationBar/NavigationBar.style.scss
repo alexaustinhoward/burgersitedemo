@@ -1,48 +1,58 @@
-.navbar{
+.NavigationBar{
     display: flex;
-    height: 2em;
+    height: 3em;
     width:100%;
     justify-content: space-around;
-    border-bottom: 0.1em solid rgba(139, 197, 214,0.5);
+    background-image: linear-gradient(to right bottom,
+    rgba(23, 31, 31, 0.54),
+    rgba(9, 11, 12, 0.54));
     align-items: center;
-    .logo{
-        font-family: 'Playfair Display SC', serif;
-        font-size: 1.5em;
-        color: white;
+    .logocontainer{
+        display: flex;
+        font-family: 'Piedra', cursive;
+        font-size: 3em;
+        color: brown;
+        img{
+            width:1em;
+            height:1em; 
+        }
     }
-    .mobileonly{
+    MobileMenu{
         display: none;
     }
-    
-    
-    .misc{
+    .signlocation{
+        position: relative;
         
-        .miscitems{
-            display: flex;
+    .aa{       
+            position: absolute;
+            z-index: 11;
+            height: 100vh;
+        }
+    }
+    
+    .menuitems{
+          display: flex;
             justify-content: space-between;
-            font-family: 'Playfair Display SC', serif;
-            font-size: 1.5em;
-            list-style-type: none;
-         
-            .item{
-                margin-left:  0.8em;
+            font-family: 'Tropical Asian Demo';
+            font-size: 3em;
+        div{
+          margin-left:  0.8em;
              color:  white;
             }
      
-    }
+    
 }
 }
 @media only screen and (max-width : 768px){
-.navbar{
-    justify-content: space-between;
+.NavigationBar{
+    justify-content: flex-start;
     width: 100vw;
-    .mobileonly{
-        display: block;
+    .menuitems{
+        display: none;
     }
-    .misc{
-        .miscitems{
-            display: none;
-        }
+    MobileMenu{
+            display: block;
+      
     }
 }
 }

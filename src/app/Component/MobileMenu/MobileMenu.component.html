@@ -1,12 +1,16 @@
 
 <div class="mobilemenuicon">
-    <a class="icon">
+    <a  (click)="OnToggleIcon()"class="icon">
         <img class="iconimage"alt="dropdownicon" src="../../../assets/images/3equal.svg"/>
     </a>
-    <div class="dropmenuitems">
-       <div> About Us</div>
-       <div> Meals</div>
-       <div> Signin</div>
+    <div [ngStyle]="{display:GetStatus()}"class="dropmenuitems">
+        <div routerLink="/about"> About Us</div>
+        <div  routerLink="/meal"> Meals</div>
+        <div  routerLink="/order"> Order</div>
+    <a target="_blank"
+    href="https://burgershacksdemo.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=7olufmn1iu2br92a43ta320q83&redirect_uri=http://localhost:4200/"
+    >   
+     <div> Signin</div></a> 
 
     </div>
 </div>

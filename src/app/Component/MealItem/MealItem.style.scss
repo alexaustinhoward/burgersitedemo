@@ -1,0 +1,94 @@
+.mealitem{
+    perspective: 150em;
+    -moz-perspective: 150em;
+    font-family: Garamond;
+    position: relative;
+    &__info{
+        background-image: linear-gradient(to right bottom,
+        rgba(165, 49, 38, 0.85),
+        rgba(145, 28, 20, 0.85));
+    height: 15em;
+    width: 15em;
+    transition: all .8s;  
+    position: absolute;
+    border-radius: 15px;
+    top:0;
+    left:0;
+    backface-visibility: hidden;
+    &--detail{
+        background-image: linear-gradient(to right bottom,
+        rgba(165, 49, 38, 0.85),
+        rgba(145, 28, 20, 0.85));
+    -webkit-box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+    -moz-box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+    box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+    transform: rotateY(180deg);
+    h1{
+        font-size: 1.9em;
+        border-bottom: white solid 0.01em;
+        color: white;
+    }
+    h2{
+        font-size: 1.3em;
+        border-bottom: white solid 0.01em;
+        color: white;
+    }
+    }  
+    &--nodetail{
+        background-image: linear-gradient(to right bottom,
+        rgba(165, 49, 38, 0.85),
+        rgba(145, 28, 20, 0.85));
+        -webkit-box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+        -moz-box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+        box-shadow: -1px -1px 5px 4px rgba(167, 27, 22, 0.54);
+    .foodimage{
+        width:15em;
+        height: 15em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: soft-light;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .titlesection{
+        position: absolute;
+        font-size: 3em;
+        background-image: linear-gradient(to right bottom,
+        rgba(165, 49, 38, 0.85),
+        rgba(145, 28, 20, 0.85));
+        color: white;
+      
+    }
+    .part1{
+      
+        top:0.2em;
+        left: 0em;
+       }
+       .part2{
+        
+        top:1.6em;
+        left: 0em;
+       }
+
+        
+    }
+    
+    .cartbutton{
+        color: #fff;
+        border-radius: 8px;
+        background: #c62d1f;
+        margin: 0.3em;
+        margin-left: 4.3rem ;
+       font-size: 1.1em;
+    }
+ 
+    
+    }
+    
+    &:active  &__info--nodetail{
+        transform: rotateY(180deg);
+    }
+    &:active  &__info--detail{
+        transform: rotateY(0);
+    }
+}

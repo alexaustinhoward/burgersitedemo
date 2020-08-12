@@ -1,0 +1,68 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "authburgershack530a971fUserPoolId": {
+            "Type": "String",
+            "Default": "authburgershack530a971fUserPoolId"
+        },
+        
+        "authburgershack530a971fAppClientID": {
+            "Type": "String",
+            "Default": "authburgershack530a971fAppClientID"
+        },
+        "authburgershack530a971fAppClientIDWeb": {
+            "Type": "String",
+            "Default": "authburgershack530a971fAppClientIDWeb"
+        },
+        "AuthRoleArn": {
+            "Type": "String"
+        },
+        "UnauthRoleArn": {
+            "Type": "String"
+        },
+        "env": {
+            "Type": "String"
+        }
+    },
+    "Conditions": {
+        "ShouldNotCreateEnvResources": {
+            "Fn::Equals": [
+                {
+                    "Ref": "env"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+    
+        "burgershackGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "burgershack",
+              "Precedence" : 1,
+              
+              "UserPoolId" : {
+                "Ref": "authburgershack530a971fUserPoolId"
+              } 
+            }
+        },
+        
+    
+        "burgershackdemoGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "burgershackdemo",
+              "Precedence" : 2,
+              
+              "UserPoolId" : {
+                "Ref": "authburgershack530a971fUserPoolId"
+              } 
+            }
+        },
+        
+    
+    
+    },
+    
+}

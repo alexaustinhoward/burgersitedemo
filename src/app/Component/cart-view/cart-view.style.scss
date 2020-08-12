@@ -1,0 +1,26 @@
+.cart{
+  
+    height: 20em;
+    width: auto;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+        display: none;
+      }
+
+    .title{
+        h1{
+            height: 2.5em;
+        }
+    }
+.cartitems{
+display: flex;
+h1{
+    height: 1.5em;
+}
+.arrow{
+width: 2em;
+filter: invert(19%) sepia(57%) saturate(2973%) hue-rotate(344deg) brightness(98%) contrast(86%);    }
+}
+}

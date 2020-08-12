@@ -1,0 +1,91 @@
+.promosection{
+    font-family: 'Anton', sans-serif;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px -1px 5px 2px rgba(135,42,25,0.51);
+    -moz-box-shadow: 2px -1px 5px 2px rgba(135,42,25,0.51);
+    box-shadow: 2px -1px 5px 2px rgba(135,42,25,0.51);
+    .promo_wrapper{
+        .promobackground{
+            height: auto;
+            width:100vw;
+           
+        }
+        .promobackgroundMobile{
+            display: none;
+        }
+        
+        .promotitle{
+            position: absolute;
+            font-size: 14em;
+            top:0.5em;
+            right:0em;
+            font-family: 'BLOGGER 1983 BRUSH';
+            color: white;
+            width: 4em;
+        }
+        .promotitlepart2{
+            position: absolute;
+            font-size: 14em;
+            top:1.5em;
+            left:6em;
+            font-family: 'BLOGGER 1983 BRUSH';
+            color: white;
+            width: 4em;
+        }
+        .btn{ 
+                position: absolute;
+                top:11em;
+                right:3em;
+                box-shadow: 3px 4px 0px 0px #8a2a21;
+                background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+                background-color:#c62d1f;
+                border-radius:18px;
+                border:1px solid #d02718;
+                cursor:pointer;
+                color:#ffffff;
+                font-family: 'BLOGGER 1983 BRUSH';
+                font-size:3em;
+                padding:7px 25px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #810e05;
+             
+            
+            &:hover {
+                background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+                background-color:#f24437;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 768px){
+    .promobackground{
+        height: auto;
+        width:100vw;
+        display: none;
+       
+    }
+    .promobackgroundMobile{
+        height: 100vh;
+        width:100vw;
+        display: block !important;
+    }   
+    .btn{
+        top:14em !important;
+        right:1.5em !important;
+        font-size:2em !important;
+     }
+     
+     .promotitle{
+        font-size: 4em!important;
+        top:1.5em !important;
+        right:0em !important;
+       
+    }
+    .promotitlepart2{
+       
+        font-size: 4em!important;
+        top:2.25em !important;
+        left:3em !important;
+       
+    }
+}

@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'BLOGGER 1983 BRUSH';
+    src: url(assets/fonts/BLOGGER1983BRUSH.ttf) format(truetype);
+  }
+  @font-face {
+    font-family: 'Tropical Asian Demo';
+    src: url(assets/fonts/TropicalAsianDemoRegular.ttf) format(truetype);
+  }
+  @font-face {
+    font-family: 'Alverion';
+    src: url(assets/fonts/Alverion.ttf) format(truetype);
+  }
+  @font-face {
+    font-family: 'Arjenta Black';
+    src: url(assets/fonts/ArjentaBlack.ttf) format(truetype);
+  }
+  @font-face {
+    font-family: 'Spartwell';
+    src: url(assets/fonts/Spartwell.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'Againts';
+    src: url(assets/fonts/Againts.ttf) format(truetype);
+  }
+  body{
+    font-family: 'Againts','Arjenta Black','Spartwell','Alverion','BLOGGER 1983 BRUSH','Tropical Asian Demo', sans-serif;
+  }
+ 
