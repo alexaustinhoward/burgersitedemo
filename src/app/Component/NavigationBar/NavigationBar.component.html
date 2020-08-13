@@ -5,20 +5,20 @@
         <div routerLink="/" class="LogoText">BurgerShack </div>
     </div>
     
-    <div class="menuitems">
-        <div routerLink="/about"> About Us</div>
-       <div  routerLink="/meal"> Meals</div>
+<div class="menuitems">
+    <div routerLink="/about"> About Us</div>
+    <div  routerLink="/meal"> Meals</div>
        
-       <div *ngIf="authState === 'signedin' && user"  routerLink="/order"> Order</div>
-<div class="signlocation">
-   <a (click)="OnToggleIcon()" class="signin"
-   >   
-    <div> Signin</div>
-</a> 
-<div [ngStyle]="{display:GetStatus()}">
-    <amplify-authenticator *ngIf="authState !== 'signedin'"class='aa'></amplify-authenticator>
-</div>
-</div>
+    <div *ngIf="authState === 'signedin' && user"  routerLink="/order"> Order</div>
+    <div class="signlocation">
+        <a (click)="OnToggleIcon()" class="signin"
+         >   
+         <div *ngIf="authState !== 'signedin'"class='aam'> Signin</div>
+        </a> 
+        <div [ngStyle]="{display:GetStatus()}">
+         <amplify-authenticator *ngIf="authState !== 'signedin'"class='aa'></amplify-authenticator>
+        </div>
+     </div>
     <amplify-sign-out *ngIf="authState === 'signedin' && user" button-text="Signout"></amplify-sign-out>
     </div>
 </div>

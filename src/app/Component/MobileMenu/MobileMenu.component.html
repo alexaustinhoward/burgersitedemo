@@ -7,10 +7,16 @@
         <div routerLink="/about"> About Us</div>
         <div  routerLink="/meal"> Meals</div>
         <div  routerLink="/order"> Order</div>
-    <a target="_blank"
-    href="https://burgershacksdemo.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=7olufmn1iu2br92a43ta320q83&redirect_uri=http://localhost:4200/"
-    >   
-     <div> Signin</div></a> 
+        <div class="signlocation">
+            <a (click)="OnToggleSignInIcon()" class="signin"
+             >   
+             <div *ngIf="authState !== 'signedin'"class='aa'> Signin</div>
+            </a> 
+            <div [ngStyle]="{display:GetSigninStatus()}">
+             <amplify-authenticator *ngIf="authState !== 'signedin'"class='aa'></amplify-authenticator>
+            </div>
+         </div>
+        <amplify-sign-out *ngIf="authState === 'signedin' && user" button-text="Signout"></amplify-sign-out>
 
     </div>
 </div>
