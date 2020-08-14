@@ -1,4 +1,4 @@
-import {Component,OnInit,ChangeDetectorRef } from'@angular/core';
+import {Component,OnInit,ChangeDetectorRef,NgZone } from'@angular/core';
 
 import { onAuthUIStateChange, CognitoUserInterface, AuthState } from '@aws-amplify/ui-components';
 @Component({
@@ -12,15 +12,15 @@ export class MobileMenuComponent implements OnInit{
     user: CognitoUserInterface | undefined;
     togglesignin:boolean=false;
     authState: AuthState;
-constructor(private ref: ChangeDetectorRef){}
-ngOnInit(){
-    onAuthUIStateChange((authState, authData) => {
-        this.authState = authState;
-        this.user = authData as CognitoUserInterface;
-        this.ref.markForCheck()
-      })
-      
-}
+    constructor(private _ngZone: NgZone,private ref: ChangeDetectorRef){}
+    ngOnInit(){
+        onAuthUIStateChange((authState, authData) => {
+            this.authState = authState;
+            this.user = authData as CognitoUserInterface;
+         
+            this._ngZone.run(() => {   this.ref.detectChanges() });
+          })
+        }
 ngOnDestroy() {
     return onAuthUIStateChange;
   }
