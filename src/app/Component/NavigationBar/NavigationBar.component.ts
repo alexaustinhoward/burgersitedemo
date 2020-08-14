@@ -1,4 +1,4 @@
-import {Component, OnInit,ChangeDetectorRef } from '@angular/core'
+import {Component, OnInit,ChangeDetectorRef,NgZone } from '@angular/core'
 import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-angular'
 import { onAuthUIStateChange, CognitoUserInterface, AuthState } from '@aws-amplify/ui-components';
 
@@ -12,12 +12,13 @@ export class NavigationBarComponent implements OnInit{
     user: CognitoUserInterface | undefined;
     togglesignin:boolean=false;
     authState: AuthState;
-constructor(private ref: ChangeDetectorRef){}
+constructor(private _ngZone: NgZone,private ref: ChangeDetectorRef){}
 ngOnInit(){
     onAuthUIStateChange((authState, authData) => {
         this.authState = authState;
         this.user = authData as CognitoUserInterface;
-        this.ref.markForCheck()
+     
+        this._ngZone.run(() => {   this.ref.detectChanges() });
       })
       
 }
