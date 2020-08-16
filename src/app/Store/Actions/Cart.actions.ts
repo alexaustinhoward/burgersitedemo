@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { Action } from '@ngrx/store'
-import { Cart } from './../Model/Cart.model'
+import { Cart } from '../Model/Cart.model'
 export const ADD_ITEM = '[Cart] Add'
 export const REMOVE_ITEM = '[Cart] Remove'
 export const LOWER_ITEM = '[Cart] Lower'

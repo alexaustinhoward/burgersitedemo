@@ -3,8 +3,8 @@ import mealitems from './MealItem.json';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../app.state';
 import { Observable } from 'rxjs/Observable';
-import * as CartAction from '../../Actions/Cart.actions'
-import {Cart} from '../../Model/Cart.model'
+import * as CartAction from '../../Store/Actions/Cart.actions'
+import {Cart} from '../../Store/Model/Cart.model'
 
 @Component({
     selector: 'MealItem',

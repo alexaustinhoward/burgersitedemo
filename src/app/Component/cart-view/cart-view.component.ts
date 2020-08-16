@@ -3,8 +3,8 @@ import { Observable } from 'rxjs/Observable';
 import { Store, select} from '@ngrx/store';
 import { AppState } from '../../app.state';
 import { map } from 'rxjs/operators';
-import * as CartAction from '../../Actions/Cart.actions'
-import { Cart } from '../../Model/Cart.model'
+import * as CartAction from '../../Store/Actions/Cart.actions'
+import { Cart } from '../../Store/Model/Cart.model'
 import mealitems from '../MealItem/MealItem.json';
 @Component({
   selector: 'cart-view',

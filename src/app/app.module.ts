@@ -15,7 +15,7 @@ import { MealPageComponent } from './Page/MealPage/MealPage.component';
 import { OrderPageComponent } from './Page/OrderPage/OrderPage.component';
 import { MealBuySectionComponent } from './Component/MealbBuySection/MealBuySection.component';
 import {StoreModule,ActionReducer} from '@ngrx/store';
-import {reducer} from './Reducer/Cart.reducer';
+import {reducer} from './Store/Reducer/Cart.reducer';
 
 import { CartViewComponent } from './Component/cart-view/cart-view.component';
 import { CartItemsComponent } from './Component/CartItems/CartItems.component';

@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store'
 import { Cart } from './../Model/Cart.model'
 import * as  CartActions from './../Actions/Cart.actions'
-import {addItemToCart,lowerItem} from './../Utils/cart.utils';
+import {addItemToCart,lowerItem} from '../Utils/cart.utils';
 const INITIAL_STATE={
     cartItems:[
       
