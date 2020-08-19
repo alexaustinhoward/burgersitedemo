@@ -11,7 +11,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             position: absolute;
             font-size: 4em;
             top:5em;
-            left:6em;
+            left:24vw;
             color: white;
            
         }
@@ -28,15 +28,15 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-family: 'Againts';
             position: absolute;
             font-size: 1.7em;
-            width: 20em;
+            width: 24vw;
             top:17em;
-            left:14em;
+            left:24vw;
             color: white;
         }
         .largeimage{
             position: absolute;
-            height: 90vh;
-            left:60em;
+            width: 19vw;
+            left:51vw;
             top:3em;
         }
         h1{
@@ -49,34 +49,60 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .titlesection1{
             top:4em;
-            left:16em;
+            right:10vw;
            
         }
         .titlesection2{
            
             top:6.5em;
-            left:16em;
+            right:10vw;
            
         }
         .medimage{
-            width: 20em;
-            height: 20em;
+            width: 17vw;
+            height: 17vw;
             
         }
         .streetc{
             position: absolute;
             top: 3em;
-            left: 40em;
+            left: 34vw;
         }
         .bflip{
             position: absolute;
             top: 3em;
-            left: 20em;
+            left: 17vw;
         }
      
 
     }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutsection{
+        .about_wrapper{
+            .medimage{
+                width: 34vw;
+                height: 34vw;
+            }
+    .titlesection1{
+        display: none;
+            }
+      .titlesection2{
+        display: none;
+            }
+
+        }
+        .largeimage{
+            display: none;
+        }
+        .streetc{
+            left: 51vw!important;
+        }
+        p{
+            width:48vw!important;
+        }
+    }
+  }
 @media only screen and (max-width : 768px){
     .aboutsection{
         .about_wrapper{
@@ -91,6 +117,7 @@ display: none;
     }
     .largeimage{
         position: absolute;
+        width: auto;
         height: 100vh;
         left:0em;
         top:0em;

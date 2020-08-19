@@ -2,6 +2,7 @@
   .orderpage{
       position: fixed;
       overflow-y: scroll;
+      overflow-x: scroll;
       width: 100vw;
       height: 100vh;
     background-image: url("../../../assets/images/backgroundwood.png");
@@ -81,7 +82,7 @@
 }
 MealBuySection{
     position: absolute;
-    bottom: 6em;
+    top:5vh;
     left:10em;
     z-index: 1;
 }
@@ -92,18 +93,62 @@ cart-view{
     z-index: 0;
 }
   }
+  @media (min-width: 1350px) and (max-width: 1800px) {
+    .choicessection{ 
+        
+        width:60vw!important;
+        cart-view{
+       
+            top: 1vh!important;
+          
+        }
+      
+     }
+  }
+  @media (min-width: 768px) and (max-width: 1350px) {
+    .images{ 
+        .other2{
+            top:9vh!important;
+           
+        }
+        .meat2{     
+            top:10vh!important;
+           
+        }
+        .bunb2{    
+           top:7vh!important;
+            
+        }
+        img{
+        width:45vw!important;
+        }
+    }
+    .choicessection{ 
+        top:55vh!important;
+        height:90vh!important;
+        left:40vh!important;
+        width:50vw!important;
+
+        cart-view{
+           
+            top:43vh!important;
+           left:3vh!important;
+         
+        }
+     }
+  }
   @media only screen and (max-width : 768px){
     .choicessection{  
-       
+       top:50vh;
       width:90vw !important;
-      height:50vh !important;
+      height:90vh !important;
       
       left: 0em !important;
  
   }
   MealBuySection{
-    top: 95vh !important;
-    left:5vh !important;
+    top: 145vh !important;
+    left:5vw !important;
     
 }
 .images{

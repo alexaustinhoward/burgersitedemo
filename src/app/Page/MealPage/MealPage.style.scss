@@ -26,6 +26,19 @@
   }
 }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  MealSection
+    { position: absolute;
+      top:2em;
+     left: 1em;
+  }
+  h1{
+  
+    top: 0.2em!important;
+    left: 3em;
+    
+}
+  }
 @media only screen and (max-width : 768px){
   MealSection
   { 

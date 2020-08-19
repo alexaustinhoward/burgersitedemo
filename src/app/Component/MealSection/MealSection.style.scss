@@ -7,6 +7,14 @@
         grid-template-rows: 17em 17em;
      
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+    .mealsection{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 16em 16em;
+         
+    }
+
+}
 @media only screen and (max-width : 768px){
     .mealsection{
         width:80vw !important;
